@@ -16,7 +16,7 @@ function setup() {
 	baseA = createSprite(400,650,800,50);
     bin1 = new Bin(725,575,5,140);
     bin2 = new Bin(680,615,124,20);
-    bin3 = new Bin(635,575,5,140);
+    bin3 = new Bin(635,585,5,140);
     
     
     dustbin = createSprite(680,550,140,80);
@@ -45,6 +45,6 @@ function draw() {
 
 function keyPressed(){
     if(keyCode === UP_ARROW){
-        Matter.Body.applyForce(paper.body,paper.body.position,{x:450,y:-450})
+    Matter.Body.applyForce(paper.body,paper.body.position,{x:395,y:-425})
     }
 }
